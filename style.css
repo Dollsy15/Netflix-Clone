@@ -10,13 +10,19 @@ body{
     color: #fff;
 }  
 
-.header .bg{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), url(images/header-image.png));
-    background-size: cover;
-    background-position: center;
-    padding: 10px 8%;
+.header {
     position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header .bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
