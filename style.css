@@ -38,7 +38,6 @@ nav{
     width: 150px;
     cursor: pointer;
     margin-left: 80px; 
-    /* filter: brightness(1.3); */
 }
 
 nav button{
@@ -51,4 +50,17 @@ nav button{
     border-radius: 4px;
     margin-left: 10px;
     cursor: pointer;
+}
+
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+.language-btn img{
+    width: 10px;
+    margin-left: 10px;
 }
