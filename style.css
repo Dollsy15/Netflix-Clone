@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 body{
@@ -10,11 +10,10 @@ body{
     color: #fff;
 }
 
-.header {
+.header{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), url(images/header-image.png));
-    background-color: #333; 
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
