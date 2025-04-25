@@ -212,3 +212,8 @@ input[type="radio"]{
 .acc input[type="radio"]:checked + label::after{
     transform: rotate(135deg);
 }
+
+.faq .email-signup {
+    max-width: 600px;
+    margin: 20px auto;
+}
