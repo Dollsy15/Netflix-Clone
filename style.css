@@ -147,3 +147,15 @@ nav button{
     font-weight: 600;
     margin-bottom: 20px;
 }
+
+.faq{
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+
