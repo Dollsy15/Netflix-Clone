@@ -290,4 +290,10 @@ input[type="radio"]{
     .text-col, .img-col{
         flex-basis: 100%;
     }
+    .features h2{
+        font-size: 30px;
+    }
+    .features p{
+        font-size: 30px;
+    }
 }
