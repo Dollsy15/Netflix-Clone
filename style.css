@@ -118,6 +118,14 @@ nav button{
     font-size: 22px;
 }
 
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #999;
+    width: 80%; 
+    margin: 10px 0;
+}
+
 .row{
     display: flex;
     width: 100%;
