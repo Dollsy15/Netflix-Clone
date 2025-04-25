@@ -118,13 +118,14 @@ nav button{
     font-size: 22px;
 }
 
-hr {
+hr{
     border: 0;
     height: 2px;
     background-color: #999;
-    width: 80%; 
-    margin: 10px 0;
+    width: 100%;
+    margin: 60px 0; /* More space above and below */
 }
+
 
 .row{
     display: flex;
