@@ -188,6 +188,7 @@ label::after{
     font-size: 34px;
     position: absolute;
     right: 20px;
+    transition: transform 0.5s;
 }
 
 input[type="radio"]{
@@ -206,4 +207,8 @@ input[type="radio"]{
 .acc input[type="radio"]:checked + label + .content{
     max-height: 600px;
     padding: 30px 20px;
+}
+
+.acc input[type="radio"]:checked + label::after{
+
 }
