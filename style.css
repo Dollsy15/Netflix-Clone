@@ -217,3 +217,7 @@ input[type="radio"]{
     max-width: 600px;
     margin: 20px auto;
 }
+
+.faq small{
+    font-size: 13px;
+}
