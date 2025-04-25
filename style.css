@@ -135,3 +135,9 @@ nav button{
     flex-basis: 50%;
     margin-bottom: 20px;
 }
+
+.img-col img{
+    display: block;
+    width: 75%;
+    margin: auto;
+}
