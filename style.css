@@ -312,4 +312,7 @@ input[type="radio"]{
         padding: 10px;
         font-size: 14px;
     }
+    label::after{
+        font-size: 22px;
+    }
 }
