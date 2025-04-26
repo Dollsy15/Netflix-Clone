@@ -282,6 +282,9 @@ input[type="radio"]{
     .logo{
         width: 100px;
     }   
+    nav {
+        flex-direction: column;
+    }
     .nav-button{
         padding: 5px 10px;
     } 
