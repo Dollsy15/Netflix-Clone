@@ -61,15 +61,19 @@ nav button{
 .language-toggle {
     display: inline-flex;
     align-items: center;
-    background: transparent;
+    background: #333;
     border: 1px solid #fff;
-    padding: 7px 10px;
+    padding: 10px 15px;
     cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .language-toggle img {
-    width: 10px;
+    width: 12px;
     margin-left: 10px;
+    transition: transform 0.3s ease;
 }
 
 .language-options {
@@ -77,39 +81,50 @@ nav button{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
+    background-color: #333;
     list-style: none;
     padding: 10px;
-    border: 1px solid #fff;
+    border-radius: 4px;
     margin-top: 5px;
     z-index: 10;
     width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .language-option {
     padding: 10px;
     cursor: pointer;
-    color: #000;
+    color: #fff;
     background: transparent;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .language-option:hover {
-    background: #f1f1f1;
+    background: #444;
 }
 
 .language-btn.active .language-options {
     display: block;
+    opacity: 1;
+    transform: scaleY(1);
 }
 
-button {
-    background: #db0001;
-    color: #fff;
-    padding: 7px 20px;
-    font-size: 12px;
-    border-radius: 4px;
-    margin-left: 10px;
-    cursor: pointer;
-    border: none;
+.language-btn.active .language-toggle img {
+    transform: rotate(180deg);
+}
+
+.language-toggle:hover {
+    background-color: #db0001;
+    transform: translateY(-2px);
+}
+
+.language-option:hover {
+    background-color: #b30000;
 }
 
 .header-content{
