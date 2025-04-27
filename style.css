@@ -53,17 +53,64 @@ nav button{
     cursor: pointer;
 }
 
-.language-btn{
+.language-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.language-toggle {
     display: inline-flex;
     align-items: center;
     background: transparent;
     border: 1px solid #fff;
     padding: 7px 10px;
+    cursor: pointer;
 }
 
-.language-btn img{
+.language-toggle img {
     width: 10px;
     margin-left: 10px;
+}
+
+.language-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-top: 5px;
+    z-index: 10;
+    width: 100%;
+}
+
+.language-option {
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+    background: transparent;
+}
+
+.language-option:hover {
+    background: #f1f1f1;
+}
+
+.language-btn.active .language-options {
+    display: block;
+}
+
+button {
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
 }
 
 .header-content{
