@@ -52,6 +52,7 @@ nav button{
     margin-left: 10px;
     cursor: pointer;
 }
+
 .language-btn {
     position: relative;
     display: inline-flex;
@@ -61,7 +62,7 @@ nav button{
 .language-toggle {
     display: inline-flex;
     align-items: center;
-    background: #333;
+    background: transparent;
     border: 1px solid #fff;
     padding: 10px 15px;
     cursor: pointer;
@@ -81,7 +82,7 @@ nav button{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background-color: #fff;
     list-style: none;
     padding: 10px;
     border-radius: 4px;
@@ -98,7 +99,7 @@ nav button{
 .language-option {
     padding: 10px;
     cursor: pointer;
-    color: #fff;
+    color: #000;
     background: transparent;
     font-weight: bold;
     transition: background-color 0.3s ease;
@@ -116,11 +117,6 @@ nav button{
 
 .language-btn.active .language-toggle img {
     transform: rotate(180deg);
-}
-
-.language-toggle:hover {
-    background-color: #db0001;
-    transform: translateY(-2px);
 }
 
 .language-option:hover {
