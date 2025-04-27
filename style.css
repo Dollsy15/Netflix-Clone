@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background: #000;
     color: #fff;
 }  
@@ -28,20 +28,20 @@ body{
     opacity: 0.3;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
 }
 
-.logo{
+.logo {
     width: 150px;
     cursor: pointer;
-    margin-left: 80px; 
+    margin-left: 80px;
 }
 
-nav button{
+nav button {
     border: 0;
     outline: 0;
     background: #db0001;
@@ -123,7 +123,7 @@ nav button{
     background-color: #b30000;
 }
 
-.header-content{
+.header-content {
     position: absolute;
     top: 38%;
     left: 50%;
@@ -132,19 +132,19 @@ nav button{
     margin-top: 100px;
 }
 
-.header-content h1{
+.header-content h1 {
     font-size: 60px;
     line-height: 70px;
     font-weight: 600;
     max-width: 650px;
 }
 
-.header-content h3{
+.header-content h3 {
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-.email-signup{
+.email-signup {
     background: #fff;
     border-radius: 4px;
     display: flex;
@@ -153,14 +153,14 @@ nav button{
     overflow: hidden;
 }
 
-.email-signup input{
+.email-signup input {
     flex: 1;
     border: 0;
     outline: 0;
     margin-left: 20px;
 }
 
-.email-signup button{
+.email-signup button {
     background: #db0001;
     border: 0;
     outline: 0;
@@ -170,25 +170,25 @@ nav button{
     padding: 15px 30px;
 }
 
-.features{
+.features {
     padding: 50px 12px;
     font-size: 22px;
 }
 
 hr {
     border: 0;
-    height: 4px; 
-    background-color: rgba(255, 255, 255, 0.6); 
-    width: 100vw; 
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100vw;
     margin: 20px 0;
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
-    margin-right: -50vw; 
+    margin-right: -50vw;
 }
 
-.row{
+.row {
     display: flex;
     width: 100%;
     align-items: center;
@@ -196,52 +196,52 @@ hr {
     padding: 50px 0;
 }
 
-.text-col{
+.text-col {
     flex-basis: 50%;
     margin-bottom: 20px;
 }
 
-.img-col{
+.img-col {
     flex-basis: 50%;
     margin-bottom: 20px;
 }
 
-.img-col img{
+.img-col img {
     display: block;
     width: 75%;
     margin: auto;
 }
 
-.features h2{
+.features h2 {
     font-size: 50px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-.faq{
+.faq {
     padding: 10px 12px;
     text-align: center;
     font-size: 18px;
 }
 
-.faq h2{
+.faq h2 {
     font-weight: 500;
     font-size: 40px;
 }
 
-.acc{
+.acc {
     margin: 60px auto;
     width: 100%;
     max-width: 750px;
 }
 
-.acc li{
+.acc li {
     list-style: none;
     width: 100%;
     padding: 5px;
 }
 
-.acc li label{
+.acc li label {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -253,7 +253,7 @@ hr {
     position: relative;
 }
 
-label::after{
+label::after {
     content: '+';
     font-size: 34px;
     position: absolute;
@@ -261,11 +261,11 @@ label::after{
     transition: transform 0.5s;
 }
 
-input[type="radio"]{
+input[type="radio"] {
     display: none;
 }
 
-.acc .content{
+.acc .content {
     background: #303030;
     text-align: left;
     padding: 0 20px;
@@ -274,12 +274,12 @@ input[type="radio"]{
     transition: max-height 0.5s, padding 0.5s;
 }
 
-.acc input[type="radio"]:checked + label + .content{
+.acc input[type="radio"]:checked + label + .content {
     max-height: 600px;
     padding: 30px 20px;
 }
 
-.acc input[type="radio"]:checked + label::after{
+.acc input[type="radio"]:checked + label::after {
     transform: rotate(135deg);
 }
 
@@ -288,29 +288,29 @@ input[type="radio"]{
     margin: 20px auto;
 }
 
-.faq small{
+.faq small {
     font-size: 13px;
 }
 
-.footer{
+.footer {
     padding: 50px 15% 10px;
     border-top: 6px solid #333;
     color: #777;
 }
 
-.footer h2{
+.footer h2 {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
 }
 
-.footer .col{
+.footer .col {
     flex-basis: 25%;
     flex-grow: 1;
     margin-bottom: 20px;
 }
 
-.footer .col a{
+.footer .col a {
     display: block;
     text-decoration: none;
     color: #777;
@@ -318,74 +318,91 @@ input[type="radio"]{
     margin-bottom: 10px;
 }
 
-.footer .row{
+.footer .row {
     align-items: flex-start;
     padding: 10px 0;
 }
 
-.footer .language-btn{
+.footer .language-btn {
     color: #fff;
     padding: 10px 20px;
     border-radius: 3px;
 }
 
-.copyright-txt{
+.copyright-txt {
     font-size: 14px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 600px) {
-    .logo{
+    .logo {
         width: 100px;
-    }   
+    }
+    
     nav {
         flex-direction: column;
     }
-    .nav-button{
+    
+    .nav-button {
         padding: 5px 10px;
-    } 
-    nav .language-btn{
+    }
+    
+    nav .language-btn {
         padding: 4px 8px;
     }
-    .header-content{
+    
+    .header-content {
         position: unset;
         transform: none;
         padding-top: 150px;
     }
-    .header-content h1{
+    
+    .header-content h1 {
         font-size: 30px;
     }
-    .email-signup button{
+    
+    .email-signup button {
         font-size: 12px;
         padding: 10px 15px;
     }
-    .text-col, .img-col{
+    
+    .text-col,
+    .img-col {
         flex-basis: 100%;
     }
-    .features h2{
+    
+    .features h2 {
         font-size: 30px;
     }
-    .features p{
+    
+    .features p {
         font-size: 15px;
     }
-    .row:nth-child(2), .row:nth-child(4){
+    
+    .row:nth-child(2),
+    .row:nth-child(4) {
         flex-direction: column-reverse;
     }
-    .features .row{
+    
+    .features .row {
         padding: 10px 0;
     }
-    .faq h2{
+    
+    .faq h2 {
         font-size: 20px;
     }
-    .acc .content{
+    
+    .acc .content {
         font-size: 14px;
     }
-    .acc li label{
+    
+    .acc li label {
         padding: 10px;
         font-size: 14px;
     }
-    label::after{
+    
+    label::after {
         font-size: 22px;
     }
 }
