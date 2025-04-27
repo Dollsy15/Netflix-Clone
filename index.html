@@ -14,10 +14,13 @@
         <nav>
             <img src="images/logo.png" alt="Logo" class="logo">
             <div>
-                <select>
-                    <option class="language-btn">English <img src="images/down-icon.png"></option>
-                    <option class="language-btn">Hindi <img src="images/down-icon.png"></option>
-                </select>
+                <div class="language-btn">
+                    <button class="language-toggle">English <img src="images/down-icon.png" alt="language toggle"></button>
+                    <ul class="language-options">
+                        <li class="language-option" data-lang="en">English</li>
+                        <li class="language-option" data-lang="hi">हिंदी</li>
+                    </ul>
+                </div>                
                 <button>Sign In</button>
             </div>
         </nav>
