@@ -50,7 +50,7 @@ nav button {
     padding: 7px 20px;
     font-size: 12px;
     border-radius: 4px;
-    margin-left: 10px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -58,6 +58,7 @@ nav button {
     position: relative;
     display: inline-flex;
     align-items: center;
+    margin-right: -5px;
 }
 
 .language-toggle {
