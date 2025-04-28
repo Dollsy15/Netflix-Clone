@@ -1,13 +1,15 @@
-// Select all language buttons and options
+// Select all language buttons and options (both header and footer)
 const languageBtns = document.querySelectorAll('.language-btn');
 const languageToggles = document.querySelectorAll('.language-toggle');
 const languageOptionItems = document.querySelectorAll('.language-option');
 
-// Set the default language text for the language toggle button
+// Set the default language text for the language toggle button (for both header and footer)
 languageToggles.forEach(languageToggle => {
+    // Set default language text (English)
     languageToggle.innerHTML = 'English <img src="images/down-icon.png" alt="language toggle">';
 });
 
+// Loop through all the language buttons (both header and footer) and add event listeners
 languageBtns.forEach(languageBtn => {
     const languageToggle = languageBtn.querySelector('.language-toggle');
     const languageOptions = languageBtn.querySelector('.language-options');
