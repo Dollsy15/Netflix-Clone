@@ -27,6 +27,17 @@ languageBtns.forEach(languageBtn => {
                 languageToggle.innerHTML = 'English <img src="images/down-icon.png" alt="language toggle">';
             }
 
+            // Switch between English and Hindi content
+            const allTextElements = document.querySelectorAll('[data-lang]');
+            allTextElements.forEach(element => {
+                // Hide elements for the language not selected
+                if (element.getAttribute('data-lang') !== selectedLang) {
+                    element.style.display = 'none';
+                } else {
+                    element.style.display = 'block'; // Show selected language
+                }
+            });
+
             // Close the dropdown after selection
             languageBtn.classList.remove('active');
         });
