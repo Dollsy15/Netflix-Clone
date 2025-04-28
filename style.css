@@ -100,7 +100,8 @@ nav button {
     transform: scaleY(0);
     transform-origin: top;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    animation: dropdown-slide 0.3s ease-out forwards;
+    list-style-type: none;
+    margin: 0;
 }
 
 .language-option {
