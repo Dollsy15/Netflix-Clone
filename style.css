@@ -74,61 +74,36 @@ nav button {
   cursor: pointer;
   border-radius: 4px;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .language-toggle img {
-  width: 12px;
-  margin-left: 10px;
-  transition: transform 0.3s ease;
+  display: none;
 }
 
 .language-options {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #444;
-  list-style: none;
-  padding: 10px;
-  border-radius: 4px;
-  margin-top: 5px;
-  z-index: 10;
-  width: 180px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  opacity: 0;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  list-style-type: none;
-  margin: 0;
+    display: block; 
+    position: static; 
+    background: transparent;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 10px;
+    opacity: 1;
+    transform: none;
+    box-shadow: none;
 }
 
 .language-option {
-  padding: 10px;
-  cursor: pointer;
-  color: #fff;
+    display: inline-block;
+    padding: 10px;
+    cursor: default;
+    color: #fff;
+    background: transparent;
+    font-weight: bold;
+    transition: none;  
+}
+
+.language-option:hover {
   background: transparent;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.language-option:hover {
-  background: #444;
-}
-
-.language-btn.active .language-options {
-  display: block;
-  opacity: 1;
-  transform: scaleY(1);
-}
-
-.language-btn.active .language-toggle img {
-  transform: rotate(180deg);
-}
-
-.language-option:hover {
-  background-color: #b30000;
 }
 
 .header-content {
