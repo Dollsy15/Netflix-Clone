@@ -5,7 +5,7 @@ const languageOptionItems = document.querySelectorAll('.language-option');
 
 // Set the default language text for the language toggle button (for both header and footer)
 languageToggles.forEach(languageToggle => {
-    // Set default language text (English)
+    // Set default language text to 'English'
     languageToggle.innerHTML = 'English <img src="images/down-icon.png" alt="language toggle">';
 });
 
