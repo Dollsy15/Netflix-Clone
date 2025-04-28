@@ -1,25 +1,21 @@
-// Select all language buttons and options (both header and footer)
+// Select all the language buttons and their respective options
 const languageBtns = document.querySelectorAll('.language-btn');
-const languageToggles = document.querySelectorAll('.language-toggle');
-const languageOptionItems = document.querySelectorAll('.language-option');
 
-// Set the default language text for the language toggle button (for both header and footer)
-languageToggles.forEach(languageToggle => {
-    // Set default language text to 'English'
-    languageToggle.innerHTML = 'English <img src="images/down-icon.png" alt="language toggle">';
-});
-
-// Loop through all the language buttons (both header and footer) and add event listeners
+// Set default language text for both header and footer
 languageBtns.forEach(languageBtn => {
     const languageToggle = languageBtn.querySelector('.language-toggle');
     const languageOptions = languageBtn.querySelector('.language-options');
+    const languageOptionItems = languageOptions.querySelectorAll('.language-option');
+
+    // Default to English
+    languageToggle.innerHTML = 'English <img src="images/down-icon.png" alt="language toggle">';
 
     // Toggle the dropdown on button click
     languageToggle.addEventListener('click', () => {
         languageBtn.classList.toggle('active');
     });
 
-    // Handle option selection
+    // Change language when a language option is clicked
     languageOptionItems.forEach(option => {
         option.addEventListener('click', (e) => {
             const selectedLang = e.target.getAttribute('data-lang');
@@ -33,13 +29,11 @@ languageBtns.forEach(languageBtn => {
 
             // Close the dropdown after selection
             languageBtn.classList.remove('active');
-
-            console.log('Selected Language:', selectedLang);
         });
     });
 });
 
-// Close dropdown if click is outside
+// Close the dropdown if clicking outside the dropdown
 document.addEventListener('click', (e) => {
     languageBtns.forEach(languageBtn => {
         if (!languageBtn.contains(e.target)) {
